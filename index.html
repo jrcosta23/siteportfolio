@@ -9,14 +9,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/style.css">
-
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
 
     <title>Soluções em TI</title>
 
+    <!-- inclusão do bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 
@@ -28,37 +27,42 @@
 
 
 
+
+
+    <!---início do menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navcolor" id="navbarNav">
+                <ul class="navbar-nav" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremim">sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">soluções de TI</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">contato</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--fim do menu -->
+
+
+
     <header>
-
-        <!---início do menu-->
-
-        <nav>
-            <ul id="menu">
-                <li><a href="#"> Início </a></li>
-                <li><a href="#sobremim">Sobre mim</a></li>
-                <li><a href="#servicos"> Soluções em TI </a></li>
-                <li><a href="contato.html"> Contato </a></li>
-
-            </ul>
-
-        </nav>
-        <!--fim do menu -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
         <!--início da seção de apresentação-->
         <div class="apresentacao">
 
@@ -70,7 +74,9 @@
                 <span>Soluções tecnólogicas em</span>
                 <h1>redes de computadores e desenvolvimento web</h1>
                 <div>
-                    <button class="btn btnContact">Entre em contato</button>
+                    <a href="#contato" Contato>
+                        <button class="btn btnContact">Entre em contato</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -78,6 +84,7 @@
         <!--fim da seção de apresentação -->
     </header>
 
+    <!--início da seção sobre mim -->
     <section id="sobremim">
         <h3> sobre mim</h3>
         <div class="containersobremim">
@@ -156,11 +163,7 @@
 
     </section>
 
-
-
-
-
-
+    <!-- fim da seção sobre mim -->
 
 
     <section id="servicos">
@@ -232,12 +235,69 @@
 
     </section>
 
-    <!--início do rodapé-->
+    <!--inícioda seção contato -->
+    <section id="contato">
+
+        <div class="contaneircontato">
+
+            <form nane="fomulariocontato">
+                <h2>Entre em contato</h2>
+
+
+
+                <!--tag label: rótulo do input -->
+                <div class="displayContato">
+                    <div class="dados">
+                        <label for="nome">Nome: </label>
+                        <!--tag input: entrada de dados -->
+                        <!-- atributo required é um  campo obrigatório -->
+                        <input type="text" id="idNome" placeholder="digite seu nome" required="required" name="nome" />
+                        <br>
+
+                        <label for="celular">celular: </label>
+                        <input type="tel" id="idfone" placeholder="(99) 99999-9999" name="tel" />
+                        <br>
+
+                        <label for="email">e-mail: </label>
+                        <input type="email" id="idemail" placeholder="seuemail@email.com" name="email" />
+                    </div>
+
+
+                    <div class="mensagem">
+                        <lebal>deixe sua mensagem:</lebal>
+                        <textarea></textarea>
+                        <br>
+
+
+                        <input type="submit" class="enviar" onclick="enviarMensagem();" value="enviar mensagem" />
+                    </div>
+
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8065064986695!2d-46.70641572448957!3d-23.647099564748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1695048263368!5m2!1spt-BR!2sbr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+    <!-- fim da seção contato -->
+
+
+    <!--início do rodapé -->
     <footer>
 
 
     </footer>
+    <!-- fim do rodapé -->
 
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 

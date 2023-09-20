@@ -21,14 +21,6 @@ utilizar o site: httpa://cssgradient.io/
 
 }
 
-#menu {
-  display: flex; /*selecionar o layout flexbox */
-  list-style: none; /*tirar as bolinhas de cada item da lista */
-  padding: 25px;
-  justify-content: center;
-  margin-bottom: 25px;
-
-}
 
 
 #menu a {
@@ -125,15 +117,23 @@ h1, span{
   
 
 .containerServicos {
-  background-color: rgb(0, 0, 0, 0.984);
+  background-color: rgba(0, 0, 0, 0.984);
   display: flex;
   justify-content: center;
   padding: 25px;
+  margin-top: -8px;
 
+ 
+
+}
+
+#servicos {
+  color: rgb(0, 0, 0);
 }
 
 .itemServico1, .itemServico3, .itemServico6, .itemServico8 { 
 border:1px solid purple;
+color: black;
 border-radius: 5px;
 margin: 15px;
 padding: 25px 10px;
@@ -154,9 +154,11 @@ width: 20%;
 .containerServicos h2 {
   font-family: "Roboto", sans-serif;
  font-size: 18px;
- color: rgb(255, 255, 255, 0.984);
+ color: rgba(255, 255, 255, 0.984);
 
 }
+
+
 
 .containerServico img {
   width: 60px;
@@ -171,6 +173,7 @@ width: 20%;
   border:1px solid rgba(83, 4, 48, 0.935);
   background:rgb(17, 15, 18);
   cursor: pointer;
+ 
   
 }
   
@@ -228,7 +231,6 @@ video {
 
 .socialmedia {
   display: flex;
-  align-items: center;
 }
 
 .socialmedia img {
@@ -246,9 +248,124 @@ video {
   margin-left: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 15;
-  color:black;
+  color:rgb(85, 20, 20);
 
 }
 
+#contato{
+  background: rgba(255, 255, 255, 0.984);
+  font-family:"Roboto", sans-serif;
+  color: rgb(0, 0, 0);
 
+}
+
+.contaneircontato h2 {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+form {
+font-style: 16px;
+max-width: 500px;
+padding-left: 50px;    /* adicionei aqui!*/
+padding-bottom: 10px;  /* adicionei aqui */
+
+}
+
+input, textarea{
+width: 200px;
+padding: 10px;
+color: black;
+margin-bottom: 10px;     /* essa linha foi alterada!*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border: 1px solid;
+
+}
+
+.displayContato{
+   display: flex;
+}
+
+form h2 {
+font-weight: 400;
+ padding-top: 30px;
+ padding-bottom: 30px;
+
+}
+
+.mensagem {
+  margin-left: 60px;
+}
+
+
+textarea {
+  resize: none;
+  width: 350px;
+  height: 100px;
+  
+}
+
+
+.mensagem input {
+   width: 150px;
+   background: rgb(85, 20, 20);
+   color: rgba(255, 255, 255, 0.984);
+   cursor: pointer;
+   font-family: "Roboto", sans-serif;
+
+}
+
+.mensagem input:houver{
+  background:rgba(131, 58, 180, 1);
+}
+
+
+.mapa {
+  margin-left: 90px;
+}
+
+iframe {
+  border-radius: 5px;
+  margin-top: -30px;
+}
+
+
+.navcolor{
+  background-color: linear-gradiente
+  90deg,px;
+  background: linear-gradient(
+    243deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(37, 42, 150, 1) 37%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  justify-content: center;
+  
+}
+
+.container-fluid{
+  background: linear-gradient(
+    243deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(37, 42, 150, 1) 37%,
+    rgba(252, 176, 69, 1) 100%
+  );
+   margin-top: -8px;
+   margin-bottom: -8px;
+
+} 
+
+.navbar-toggler{
+  border:1px solid transparent;
+  margin: 7px;
+}
+
+
+.navbar {
+
+ --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+ 
 
